@@ -1,0 +1,207 @@
+/* Reset dan pengaturan dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: white;
+    overflow-x: hidden;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Background bintang */
+#star-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://cdn.pixabay.com/photo/2016/12/06/00/53/stars-1889576_960_720.jpg') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+/* Kontainer utama */
+#main-container {
+    text-align: center;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #00bfff;
+}
+
+nav button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #00bfff;
+    color: #111;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav button:hover {
+    background-color: #0099cc;
+}
+
+/* Kontainer produk */
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.product-card img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.product-card button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #00bfff;
+    color: #111;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+    background-color: #0099cc;
+}
+
+/* Keranjang */
+#cart {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    z-index: 10;
+    width: 300px;
+}
+
+#cart h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#cart-items {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+#cart-items li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#cart-items span {
+    color: #ff4040;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#total-price {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+#checkout, #close-cart {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #00bfff;
+    color: #111;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+#checkout:hover, #close-cart:hover {
+    background-color: #0099cc;
+}
+
+/* Tombol konfirmasi pembatalan */
+#cancel-cart {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    z-index: 10;
+    width: 300px;
+}
+
+#cancel-cart button {
+    background-color: #ff4040;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+#cancel-cart button:hover {
+    background-color: #ff0000;
+}

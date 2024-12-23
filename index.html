@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daxxy Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="star-background"></div>
+    <div id="main-container">
+        <header>
+            <h1>Daxxy Store</h1>
+            <nav>
+                <button id="cart-btn">Keranjang <span id="cart-count">0</span></button>
+            </nav>
+        </header>
+
+        <div class="products-container">
+            <!-- Produk pertama -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300" alt="Panel Pterodactyl Public 5GB">
+                <h3>Panel Pterodactyl Public 5GB</h3>
+                <p>Harga: Rp 4.000</p>
+                <button class="add-to-cart" data-product="Panel Pterodactyl Public 5GB" data-price="4000">Tambah ke Keranjang</button>
+            </div>
+
+            <!-- Produk kedua -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300" alt="Panel Unli Public">
+                <h3>Panel Unli Public</h3>
+                <p>Harga: Rp 5.000</p>
+                <button class="add-to-cart" data-product="Panel Unli Public" data-price="5000">Tambah ke Keranjang</button>
+            </div>
+
+            <!-- Produk ketiga -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300" alt="Admin Panel Public">
+                <h3>Admin Panel Public</h3>
+                <p>Harga: Rp 8.000</p>
+                <button class="add-to-cart" data-product="Admin Panel Public" data-price="8000">Tambah ke Keranjang</button>
+            </div>
+
+            <!-- Produk keempat (Reseller Panel Public) -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300" alt="Reseller Panel Public">
+                <h3>Reseller Panel Public</h3>
+                <p>Harga: Rp 9.000</p>
+                <button class="add-to-cart" data-product="Reseller Panel Public" data-price="9000">Tambah ke Keranjang</button>
+            </div>
+
+            <!-- Produk kelima (Panel Pterodactyl Private 5GB) -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300" alt="Panel Pterodactyl Private 5GB">
+                <h3>Panel Pterodactyl Private 5GB</h3>
+                <p>Harga: Rp 5.000</p>
+                <button class="add-to-cart" data-product="Panel Pterodactyl Private 5GB" data-price="5000">Tambah ke Keranjang</button>
+            </div>
+
+            <!-- Produk keenam (Panel Unli Private) -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300" alt="Panel Unli Private">
+                <h3>Panel Unli Private</h3>
+                <p>Harga: Rp 7.000</p>
+                <button class="add-to-cart" data-product="Panel Unli Private" data-price="7000">Tambah ke Keranjang</button>
+            </div>
+
+            <!-- Produk ketujuh (Reseller Panel Private) -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300" alt="Reseller Panel Private">
+                <h3>Reseller Panel Private</h3>
+                <p>Harga: Rp 11.000</p>
+                <button class="add-to-cart" data-product="Reseller Panel Private" data-price="11000">Tambah ke Keranjang</button>
+            </div>
+        </div>
+
+        <div id="cart">
+            <h2>Keranjang</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: Rp <span id="total-price">0</span></p>
+            <button id="checkout">Checkout</button>
+            <button id="close-cart">Tutup Keranjang</button>
+        </div>
+
+        <div id="cancel-cart" style="display: none;">
+            <h2>Apakah Anda yakin ingin menghapus barang dari keranjang?</h2>
+            <button id="confirm-cancel">Ya</button>
+            <button id="cancel-cancel">Tidak</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
